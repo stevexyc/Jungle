@@ -1,0 +1,129 @@
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
+	<title>Jungle</title>
+</head>
+
+<body>
+	<div class="container center">
+		{{> chatapp}}
+		{{> nav}}
+	</div>
+</body>
+
+<template name="chatapp">
+	<div class="container">
+
+		<!-- Header -->
+		<div class="row" id="header">
+			<div class="small-3 large-3 columns">
+				Logo
+			</div>
+			<div class="small-9 large-9 columns">
+				Header / Title / W.E
+			</div>	
+		</div>
+
+		<!-- Chat loop -->
+		<div class="container" id="chatapp-container">
+			{{> chats}}
+		</div>
+
+		<!-- Submit Bar -->
+		<div class="row" id="submit-chat">
+			<div class="small-12 columns">
+					<div class="row collapse">
+				        <div class="small-10 columns">
+							<input id="new-chat" type="text" placeholder="Hex Value">
+				        </div>
+						<div class="small-2 columns" id="submit-button">
+							<a href="#" class="button prefix">Send</a>
+				        </div>
+					</div>
+			</div>
+		</div>
+		<!-- <div class="row collapse" id="submit-chat">
+	        <div class="small-10 columns">
+				<input id="new-chat" type="text" placeholder="Hex Value">
+	        </div>
+			<div class="small-2 columns" id="submit-button">
+				<a href="#" class="button prefix">Send</a>
+	        </div>
+		</div> -->
+
+	</div>
+</template>
+
+<template name="chats">
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			Second chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 small-offset-1 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			Second chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 small-offset-1 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			Second chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 large-11 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-11 small-offset-1 columns">
+			First chat in a series of chats
+		</div>
+	</div>
+</template>
+
+<template name="nav">
+	<div class="container" id="nav-container">
+		<div class="row">
+			<div class="small-3 columns" id="chat-btn"></div>
+			<div class="small-3 columns" id="event-btn"></div>
+			<div class="small-3 columns" id="user-btn"></div>
+			<div class="small-3 columns" id="search-btn"></div>
+		</div>	
+	</div>
+</template>
